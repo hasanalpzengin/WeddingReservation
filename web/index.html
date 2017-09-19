@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Wedding Appointment</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link href="main.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="banner">
+            <h2>Welcome to Our Wedding</h2>
+        </div>
+        <img src="images/wedding.png" alt="wedding" class="image"/>
+        <div class="loginArea">
+            <h3>Enter invitation code to begin</h3>
+                <form id="Registration" action="findWedding.do" method="POST">
+                    <table>
+                        <tr>
+                            <td id="textCell"><p class="form" id="text">Invitation ID: </p></td>
+                            <td><input class="form" type="text" name="invitationID" value="" id="invitationID" /><br></td>
+                        </tr>
+                        <tr>
+
+                            <td><input class="form" type="button" value="Submit" onclick="onSubmit()" /></td>
+                            <td><input class="form" type="reset" value="Reset" name="Reset" /></td>
+                        </tr>
+                    </table>
+                </form>
+        </div>
+
+        <script>
+            var invitation_form = document.getElementById("Registration");
+
+            function onSubmit(){
+                var invitation_id = document.getElementById("invitationID").value;
+                if(!isNaN(parseInt(invitation_id)) && isFinite(invitation_id)){
+                    invitation_form.submit();
+                }else{
+                    alert("Invitation ID can't contain non-numerical character");
+                }
+            }
+        </script>
+
+    </body>
+</html>

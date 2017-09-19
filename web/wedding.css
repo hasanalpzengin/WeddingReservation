@@ -1,0 +1,101 @@
+.banner{
+    position: absolute;
+    top: 50px;
+    left: 3%;
+    width: 25%;
+}
+.banner > h2{
+    text-align: center;
+    color: #FFFFFF;
+}
+.weddingArea{
+    width: 30%;
+    background-color: rgba(255,255,255,0.6);
+    margin-top: 150px;
+    margin-left: 2%;
+    padding: 15px;
+    float: left;
+}
+
+table{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+td{
+    width: 50%;
+    height: 50px;
+    vertical-align: middle;
+    background-color: #FFFFFF;
+}
+.image {
+    position: absolute;
+    right: 5%;
+    top: 100px;
+    width: auto;
+    height: 60%;
+    z-index: -2;
+}
+.reservationArea{
+    position: absolute;
+    float: left;
+    top: 600px;
+    left: 2%;
+    width: 30%;
+    background-color: rgba(255,255,255,0.6);
+    padding: 5px;
+    text-align: center;
+}
+.form{
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+}
+.tableArea{
+    position: absolute;
+    right: 1%;
+    width: 58%;
+    min-width: 250px;
+    height: auto;
+    margin-top: 50px;
+    padding-top: 0px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.table{
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    background-image: url(images/table.png);
+    background-size:cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+}
+
+#addButton{
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    background-image: url(images/hearthButton.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 40%;
+}
+
+.table > p{
+    color: #FFFFFF;
+    line-height:normal;
+}
+
+.tableID, .chairAmount{
+    line-height: normal;
+    color: #FFFFFF;
+}

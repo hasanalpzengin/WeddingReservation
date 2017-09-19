@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>GETentry</servlet-name>
+        <servlet-class>data.GETentry</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>registerWedding</servlet-name>
+        <servlet-class>data.registerWedding</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegisterWedding</servlet-name>
+        <servlet-class>data.RegisterWedding</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Reservation</servlet-name>
+        <servlet-class>data.Reservation</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GETentry</servlet-name>
+        <url-pattern>/GETentry</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registerWedding</servlet-name>
+        <url-pattern>/registerWedding.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterWedding</servlet-name>
+        <url-pattern>/Register.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Reservation</servlet-name>
+        <url-pattern>/Reservation.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
